@@ -1,0 +1,14 @@
+dssc:
+  service: "<smart check url:port>"
+  username: "<smart check username>"
+  password: "<smart check password>"
+
+repository:
+  name: "<repository name>"
+  image_tag: "<image tag, e.g. latest>"
+
+criticalities:
+  - defcon1
+  - critical
+  - high
+  - medium
