@@ -85,6 +85,16 @@ docker run scan-report -O \
   --password "${DSSC_PASSWORD}" > report_${TARGET_IMAGE}.pdf
 ```
 
+
+docker run scan-report -O \
+  --config_path "/usr/src/app" \
+  --name nginx \
+  --image_tag latest \
+  --out_path "." \
+  --service 192.168.1.121:8443 \
+  --username "admin" \
+  --password "trendmicro" > report_${TARGET_IMAGE}.pdf
+
 ## Pipeline Integration
 
 Scripted pipeline example:
